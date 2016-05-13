@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices.gradeservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.gradeservice/">
+
+<xs:element name="saveMark" type="tns:saveMark"/>
+
+<xs:element name="saveMarkDTO" type="tns:saveMarkDTO"/>
+
+<xs:element name="saveMarkDTOResponse" type="tns:saveMarkDTOResponse"/>
+
+<xs:element name="saveMarkResponse" type="tns:saveMarkResponse"/>
+
+<xs:element name="saveStudent" type="tns:saveStudent"/>
+
+<xs:element name="saveStudentDTO" type="tns:saveStudentDTO"/>
+
+<xs:element name="saveStudentDTOResponse" type="tns:saveStudentDTOResponse"/>
+
+<xs:element name="saveStudentResponse" type="tns:saveStudentResponse"/>
+
+<xs:element name="saveSubject" type="tns:saveSubject"/>
+
+<xs:element name="saveSubjectDTO" type="tns:saveSubjectDTO"/>
+
+<xs:element name="saveSubjectDTOResponse" type="tns:saveSubjectDTOResponse"/>
+
+<xs:element name="saveSubjectGroup" type="tns:saveSubjectGroup"/>
+
+<xs:element name="saveSubjectGroupDTO" type="tns:saveSubjectGroupDTO"/>
+
+<xs:element name="saveSubjectGroupDTOResponse" type="tns:saveSubjectGroupDTOResponse"/>
+
+<xs:element name="saveSubjectGroupResponse" type="tns:saveSubjectGroupResponse"/>
+
+<xs:element name="saveSubjectResponse" type="tns:saveSubjectResponse"/>
+
+<xs:complexType name="saveMark">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+<xs:element name="grade" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubject">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentDTO">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkDTO">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+<xs:element name="grade" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectDTO">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudent">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectGroup">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectGroupResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectGroupDTO">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectGroupDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

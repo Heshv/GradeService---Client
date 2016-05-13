@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:17331/ModelPersistanceService/ModelPersistanceSaveService?wsdl" uri="wsdl/localhost_17331/ModelPersistanceService/ModelPersistanceSaveService.wsdl"/>
+    <system systemId="http://localhost:17331/ModelPersistanceService/ModelPersistanceSaveService?xsd=1" uri="wsdl/localhost_17331/ModelPersistanceService/ModelPersistanceSaveService.xsd_1.xsd"/>
+    <system systemId="http://localhost:17331/ModelPersistanceUpdateService/ModelPersistanceUpdateService?wsdl" uri="wsdl/localhost_17331/ModelPersistanceUpdateService/ModelPersistanceUpdateService.wsdl"/>
+    <system systemId="http://localhost:17331/ModelPersistanceUpdateService/ModelPersistanceUpdateService?xsd=1" uri="wsdl/localhost_17331/ModelPersistanceUpdateService/ModelPersistanceUpdateService.xsd_1.xsd"/>
+    <system systemId="http://localhost:17331/ModelPersistanceDeleteService/ModelPersistanceDeleteService?wsdl" uri="wsdl/localhost_17331/ModelPersistanceDeleteService/ModelPersistanceDeleteService.wsdl"/>
+    <system systemId="http://localhost:17331/ModelPersistanceDeleteService/ModelPersistanceDeleteService?xsd=1" uri="wsdl/localhost_17331/ModelPersistanceDeleteService/ModelPersistanceDeleteService.xsd_1.xsd"/>
+    <system systemId="http://localhost:17331/DataRetrivalService/DataRetrivalService?wsdl" uri="wsdl/localhost_17331/DataRetrivalService/DataRetrivalService.wsdl"/>
+    <system systemId="http://localhost:17331/DataRetrivalService/DataRetrivalService?xsd=1" uri="wsdl/localhost_17331/DataRetrivalService/DataRetrivalService.xsd_1.xsd"/>
+    <system systemId="http://localhost:17331/SharedModelPersistanceService/SharedModelPersistanceService?wsdl" uri="wsdl/localhost_17331/SharedModelPersistanceService/SharedModelPersistanceService.wsdl"/>
+    <system systemId="http://localhost:17331/SharedModelPersistanceService/SharedModelPersistanceService?xsd=1" uri="wsdl/localhost_17331/SharedModelPersistanceService/SharedModelPersistanceService.xsd_1.xsd"/>
+    <system systemId="http://localhost:17331/NewWebService/NewWebService?wsdl" uri="wsdl/localhost_17331/NewWebService/NewWebService.wsdl"/>
+    <system systemId="http://localhost:17331/NewWebService/NewWebService?xsd=1" uri="wsdl/localhost_17331/NewWebService/NewWebService.xsd_1.xsd"/>
+</catalog>

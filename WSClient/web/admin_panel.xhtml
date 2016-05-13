@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE HTML>
+<!--
+        Hyperspace by HTML5 UP
+        html5up.net | @n33co
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <head>
+        <title>GradeService - Administration panel</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    </head>
+    <body>
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Administration Panel</a></li>
+                        <li><a href="#one">Subjects</a></li>
+                        <li><a href="#two">Students</a></li>
+                        <li><a href="#three">Grades</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1 fullscreen fade-up">
+                <div class="inner">
+                    <h1>GradeService - Administration panel</h1>
+                </div>
+            </section>
+
+            <hr></hr>
+
+            <!-- One -->
+            <section id="one" class="wrapper style1 fade-up">
+                <div class="inner">
+                    <h2>Subject Management</h2>
+                    <p>Add, update and remove subjects and courses.</p>
+                    <div class="split style1">
+                        <section>
+                            <label>Subjects</label>
+                            <table>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th></th>
+                                </tr>
+                                <h:form>
+                                    <ui:repeat value="#{subjectController.subjectList}" varStatus="status" var="o">
+                                        <tr>
+                                            <td>#{o.id}</td>
+                                            <td>#{o.name}</td>
+                                            <td>
+
+                                        <h:commandLink value="delete" action="#{subjectController.deleteSubject(o)}"></h:commandLink>
+
+                                        </td>
+                                        </tr>
+                                    </ui:repeat>
+                                </h:form>
+                            </table>
+                        </section>
+                        <section>
+                            <h:form>
+                                <label for="id1">ID</label>
+                                <h:inputText binding="#{input1subject}" id="id1"/>
+                                <p></p>
+                                <label for="name1">Name</label>
+                                <h:inputText binding="#{input2subject}" id="name1"/>
+                                <p></p>
+                                <h:commandButton value="add subject" type="submit" action="#{subjectController.addSubject(input2subject.value)}" />
+                                <p></p>
+                                <h:commandButton value="update subject" type="submit" action="#{subjectController.updateSubject(input1subject.value, input2subject.value)}" />
+                            </h:form>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <hr></hr>
+
+            <!-- Two -->
+            <section id="two" class="wrapper style1 fade-up">
+                <div class="inner">
+                    <h2>Student Management</h2>
+                    <p>Add, update and remove students.</p>
+                    <div class="split style1">
+                        <section>
+                            <label>Students</label>
+                            <table>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th>address</th>
+                                    <th></th>
+                                </tr>
+                                <h:form>
+                                    <ui:repeat value="#{studentController.studentList}" varStatus="status" var="o">
+                                        <tr>
+                                            <td>#{o.id}</td>
+                                            <td>#{o.firstName} #{o.lastName}</td>
+                                            <td>#{o.address}</td>
+                                            <td>
+
+                                        <h:commandLink value="delete" action="#{studentController.deleteStudent(o)}"></h:commandLink>
+
+                                        </td>
+                                        </tr>
+                                    </ui:repeat>
+                                </h:form>
+                            </table>
+                        </section>
+                        <section>
+                            <h:form>
+                                <label for="idStudent">ID</label>
+                                <h:inputText binding="#{input1}" id="idStudent"/>
+                                <p></p>
+                                <label for="firstName">First Name</label>
+                                <h:inputText binding="#{input2}" id="firstName"/>
+                                <p></p>
+                                <label for="lastName">Last Name</label>
+                                <h:inputText binding="#{input3}" id="lastName"/>
+                                <p></p>
+                                <label for="address">Address</label>
+                                <h:inputText binding="#{input4}" id="address"/>
+                                <p></p>
+                                <h:commandButton value="add student" type="submit" action="#{studentController.addStudent(input2.value,input3.value,input4.value)}" />
+                                <p></p>
+                                <h:commandButton value="update student" type="submit" action="#{studentController.updateStudent(input1.value, input2.value,input3.value,input4.value)}" />
+                            </h:form>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <hr></hr>
+
+            <!-- Three -->
+            <section id="three" class="wrapper style1 fade-up">
+
+                <div class="inner">
+                    <h:form>
+                        <h2>Grade Management</h2>
+                        <p>Add, update and remove students' grades.</p>
+                        <div class="split style1">
+                            <section>
+                                <label for="idMark">ID</label>
+                                <h:inputText binding="#{input11}" id="idMark"/>
+                                <p></p>
+                                <label for="studentId">Student ID</label>
+                                <h:inputText binding="#{input22}" id="studentId"/>
+                                <p></p>
+                                <label for="subjectId">Subject ID</label>
+                                <h:inputText binding="#{input33}" id="subjectId"/>
+                                <p></p>
+                                <label for="forwhat">For</label>
+                                <h:inputText binding="#{input44}" id="forwhat"/>
+                                <p></p>
+                                <label for="mark">Grade</label>
+                                <h:inputText binding="#{input55}" id="mark"/>
+                                <p></p>
+                            </section>
+                            <section>
+                                <h:commandButton value="add grade" type="submit" action="#{markController.addMark(input22.value,input33.value,input44.value,input55.value)}" />
+                                <p></p>
+                                <h:commandButton value="update grade" type="submit" action="#{markController.updateMark(input11.value,input22.value,input33.value,input44.value,input55.value)}" />
+                                <p></p>
+                                <h:commandButton value="delete grade" type="submit" action="#{markController.deleteMark(input11.value)}" />
+                            </section>
+                        </div>
+                    </h:form>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li> Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

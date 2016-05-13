@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices.gradeservice/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.gradeservice/">
+
+<xs:element name="deleteMark" type="tns:deleteMark"/>
+
+<xs:element name="deleteMarkDTO" type="tns:deleteMarkDTO"/>
+
+<xs:element name="deleteMarkDTO2" type="tns:deleteMarkDTO2"/>
+
+<xs:element name="deleteMarkDTO2Response" type="tns:deleteMarkDTO2Response"/>
+
+<xs:element name="deleteMarkDTOResponse" type="tns:deleteMarkDTOResponse"/>
+
+<xs:element name="deleteMarkResponse" type="tns:deleteMarkResponse"/>
+
+<xs:element name="deleteStudent" type="tns:deleteStudent"/>
+
+<xs:element name="deleteStudentDTO" type="tns:deleteStudentDTO"/>
+
+<xs:element name="deleteStudentDTO2" type="tns:deleteStudentDTO2"/>
+
+<xs:element name="deleteStudentDTO2Response" type="tns:deleteStudentDTO2Response"/>
+
+<xs:element name="deleteStudentDTOResponse" type="tns:deleteStudentDTOResponse"/>
+
+<xs:element name="deleteStudentResponse" type="tns:deleteStudentResponse"/>
+
+<xs:element name="deleteSubject" type="tns:deleteSubject"/>
+
+<xs:element name="deleteSubjectDTO" type="tns:deleteSubjectDTO"/>
+
+<xs:element name="deleteSubjectDTO2" type="tns:deleteSubjectDTO2"/>
+
+<xs:element name="deleteSubjectDTO2Response" type="tns:deleteSubjectDTO2Response"/>
+
+<xs:element name="deleteSubjectDTOResponse" type="tns:deleteSubjectDTOResponse"/>
+
+<xs:element name="deleteSubjectResponse" type="tns:deleteSubjectResponse"/>
+
+<xs:element name="getAllMarks" type="tns:getAllMarks"/>
+
+<xs:element name="getAllMarksResponse" type="tns:getAllMarksResponse"/>
+
+<xs:element name="getAllMarksSQL" type="tns:getAllMarksSQL"/>
+
+<xs:element name="getAllMarksSQLResponse" type="tns:getAllMarksSQLResponse"/>
+
+<xs:element name="getAllMarksSQLStudentAndSubject" type="tns:getAllMarksSQLStudentAndSubject"/>
+
+<xs:element name="getAllMarksSQLStudentAndSubjectResponse" type="tns:getAllMarksSQLStudentAndSubjectResponse"/>
+
+<xs:element name="getAllStudents" type="tns:getAllStudents"/>
+
+<xs:element name="getAllStudentsResponse" type="tns:getAllStudentsResponse"/>
+
+<xs:element name="getAllSubjects" type="tns:getAllSubjects"/>
+
+<xs:element name="getAllSubjectsResponse" type="tns:getAllSubjectsResponse"/>
+
+<xs:element name="getAverageGrade" type="tns:getAverageGrade"/>
+
+<xs:element name="getAverageGradeResponse" type="tns:getAverageGradeResponse"/>
+
+<xs:element name="getMarkById" type="tns:getMarkById"/>
+
+<xs:element name="getMarkByIdResponse" type="tns:getMarkByIdResponse"/>
+
+<xs:element name="getStudentById" type="tns:getStudentById"/>
+
+<xs:element name="getStudentByIdResponse" type="tns:getStudentByIdResponse"/>
+
+<xs:element name="getSubjectById" type="tns:getSubjectById"/>
+
+<xs:element name="getSubjectByIdResponse" type="tns:getSubjectByIdResponse"/>
+
+<xs:element name="getSubjectGroupById" type="tns:getSubjectGroupById"/>
+
+<xs:element name="getSubjectGroupByIdResponse" type="tns:getSubjectGroupByIdResponse"/>
+
+<xs:element name="saveMark" type="tns:saveMark"/>
+
+<xs:element name="saveMarkDTO" type="tns:saveMarkDTO"/>
+
+<xs:element name="saveMarkDTO2" type="tns:saveMarkDTO2"/>
+
+<xs:element name="saveMarkDTO2Response" type="tns:saveMarkDTO2Response"/>
+
+<xs:element name="saveMarkDTOResponse" type="tns:saveMarkDTOResponse"/>
+
+<xs:element name="saveMarkResponse" type="tns:saveMarkResponse"/>
+
+<xs:element name="saveStudent" type="tns:saveStudent"/>
+
+<xs:element name="saveStudentDTO" type="tns:saveStudentDTO"/>
+
+<xs:element name="saveStudentDTO2" type="tns:saveStudentDTO2"/>
+
+<xs:element name="saveStudentDTO2Response" type="tns:saveStudentDTO2Response"/>
+
+<xs:element name="saveStudentDTOResponse" type="tns:saveStudentDTOResponse"/>
+
+<xs:element name="saveStudentResponse" type="tns:saveStudentResponse"/>
+
+<xs:element name="saveSubject" type="tns:saveSubject"/>
+
+<xs:element name="saveSubjectDTO" type="tns:saveSubjectDTO"/>
+
+<xs:element name="saveSubjectDTO2" type="tns:saveSubjectDTO2"/>
+
+<xs:element name="saveSubjectDTO2Response" type="tns:saveSubjectDTO2Response"/>
+
+<xs:element name="saveSubjectDTOResponse" type="tns:saveSubjectDTOResponse"/>
+
+<xs:element name="saveSubjectResponse" type="tns:saveSubjectResponse"/>
+
+<xs:element name="updateMark" type="tns:updateMark"/>
+
+<xs:element name="updateMarkDTO" type="tns:updateMarkDTO"/>
+
+<xs:element name="updateMarkDTO2" type="tns:updateMarkDTO2"/>
+
+<xs:element name="updateMarkDTO2Response" type="tns:updateMarkDTO2Response"/>
+
+<xs:element name="updateMarkDTOResponse" type="tns:updateMarkDTOResponse"/>
+
+<xs:element name="updateMarkResponse" type="tns:updateMarkResponse"/>
+
+<xs:element name="updateStudent" type="tns:updateStudent"/>
+
+<xs:element name="updateStudentDTO" type="tns:updateStudentDTO"/>
+
+<xs:element name="updateStudentDTO2" type="tns:updateStudentDTO2"/>
+
+<xs:element name="updateStudentDTO2Response" type="tns:updateStudentDTO2Response"/>
+
+<xs:element name="updateStudentDTOResponse" type="tns:updateStudentDTOResponse"/>
+
+<xs:element name="updateStudentResponse" type="tns:updateStudentResponse"/>
+
+<xs:element name="updateSubject" type="tns:updateSubject"/>
+
+<xs:element name="updateSubjectDTO" type="tns:updateSubjectDTO"/>
+
+<xs:element name="updateSubjectDTO2" type="tns:updateSubjectDTO2"/>
+
+<xs:element name="updateSubjectDTO2Response" type="tns:updateSubjectDTO2Response"/>
+
+<xs:element name="updateSubjectDTOResponse" type="tns:updateSubjectDTOResponse"/>
+
+<xs:element name="updateSubjectResponse" type="tns:updateSubjectResponse"/>
+
+<xs:complexType name="updateMarkDTO2">
+<xs:sequence>
+<xs:element name="entity" type="tns:mark" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mark">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="student" type="tns:student" minOccurs="0"/>
+<xs:element name="subject" type="tns:subject" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="mark" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="student">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subject">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMarkDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteSubjectDTO2">
+<xs:sequence>
+<xs:element name="entity" type="tns:subject" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteSubjectDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMarksSQL">
+<xs:sequence>
+<xs:element name="student_id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMarksSQLResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mark" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectDTO2">
+<xs:sequence>
+<xs:element name="subject" type="tns:subject" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllSubjects">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllSubjectsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:subject" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteStudentDTO2">
+<xs:sequence>
+<xs:element name="entity" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteStudentDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudentDTO2">
+<xs:sequence>
+<xs:element name="student" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudentDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMarks">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllMarksResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mark" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteStudent">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMark">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+<xs:element name="grade" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSubject">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSubjectResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentDTO2">
+<xs:sequence>
+<xs:element name="student" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMarkDTO">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+<xs:element name="grade" type="xs:double"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMarkDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudent">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudentById">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudentByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentDTO">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveStudentDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMarksSQLStudentAndSubject">
+<xs:sequence>
+<xs:element name="student_id" type="xs:int"/>
+<xs:element name="subject_id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMarksSQLStudentAndSubjectResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mark" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMark">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+<xs:element name="grade" type="xs:float"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMarkResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkDTO2">
+<xs:sequence>
+<xs:element name="mark" type="tns:mark" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSubjectDTO2">
+<xs:sequence>
+<xs:element name="entity" type="tns:subject" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSubjectDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteStudentDTO">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteStudentDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMarkDTO2">
+<xs:sequence>
+<xs:element name="entity" type="tns:mark" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMarkDTO2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudent">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllStudents">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllStudentsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkDTO">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="subjectId" type="xs:int"/>
+<xs:element name="studentId" type="xs:int"/>
+<xs:element name="grade" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveMarkDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAverageGrade">
+<xs:sequence>
+<xs:element name="marklist" type="tns:mark" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAverageGradeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubject">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubjectGroupById">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubjectGroupByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:subjectGroup" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subjectGroup">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="student" type="tns:student" minOccurs="0"/>
+<xs:element name="subject" type="tns:subject" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudentDTO">
+<xs:sequence>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudentDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMark">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMarkResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubjectById">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubjectByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:subject" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteSubjectDTO">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteSubjectDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMarkDTO">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMarkDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSubjectDTO">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateSubjectDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMarkById">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMarkByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mark" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteSubject">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteSubjectResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectDTO">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveSubjectDTOResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

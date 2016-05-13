@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE HTML>
+<!--
+        Hyperspace by HTML5 UP
+        html5up.net | @n33co
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <head>
+        <title>GradeService</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    </head>
+    <body>
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Welcome</a></li>
+                        <li><a href="#one">Grades</a></li>
+                        <li><a href="#two">Statistics</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1 fullscreen fade-up">
+                <div class="inner">
+                    <h1>GradeService</h1>
+                    <p>You can check your grades here.</p>
+                    <ul class="actions">
+                        <li><a href="#one" class="button scrolly">go to grades</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- One -->
+            <section id="one" class="wrapper style2 spotlights">
+                <section>
+                    <a href="#" class="image"><img src="images/maths.jpg" alt="" data-position="center center" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Mathematics</h2>
+
+                            <table>
+                                <tr>
+                                    <th><h:outputText id="ocena1" value="For: " ></h:outputText> </th>
+                                <th><h:outputText id="ocena1" value="Grade: " ></h:outputText> </th>
+                                </tr>
+                                <ui:repeat var="o" value="#{markController.getMarklist(1, 1)}" varStatus="status">
+
+                                    <tr>
+                                        <td>#{o.name}</td>
+                                        <td style="color:greenyellow;font-size: large;" >#{o.mark}</td>
+                                    </tr>
+
+                                </ui:repeat>
+
+                            </table>
+                            <ul class="actions">
+                                <li><a href="#" class="button">back</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image"><img src="images/eng.jpg" alt="" data-position="top center" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>English</h2>
+                            <table>
+                                <tr>
+                                    <th><h:outputText id="ocena1" value="For: " ></h:outputText> </th>
+                                <th><h:outputText id="ocena1" value="Grade: " ></h:outputText> </th>
+                                </tr>
+                                <ui:repeat var="o" value="#{markController.getMarklist(1, 2)}" varStatus="status">
+
+                                    <tr>
+                                        <td>#{o.name}</td>
+                                        <td style="color:greenyellow;font-size: large;" >#{o.mark}</td>
+                                    </tr>
+
+                                </ui:repeat>
+
+                            </table>
+                            <ul class="actions">
+                                <li><a href="#" class="button">back</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image"><img src="images/cs.png" alt="" data-position="25% 25%" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Computer Science</h2>
+                            <table>
+                                <tr>
+                                    <th><h:outputText id="ocena1" value="For: " ></h:outputText> </th>
+                                <th><h:outputText id="ocena1" value="Grade: " ></h:outputText> </th>
+                                </tr>
+                                <ui:repeat var="o" value="#{markController.getMarklist(1, 3)}" varStatus="status">
+
+                                    <tr>
+                                        <td>#{o.name}</td>
+                                        <td style="color:greenyellow;font-size: large;" >#{o.mark}</td>
+                                    </tr>
+
+                                </ui:repeat>
+
+                            </table>
+                            <ul class="actions">
+                                <li><a href="#" class="button">back</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image"><img src="images/history.png" alt="" data-position="25% 25%" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>History</h2>
+                            <table>
+                                <tr>
+                                    <th><h:outputText id="ocena1" value="For: " ></h:outputText> </th>
+                                <th><h:outputText id="ocena1" value="Grade: " ></h:outputText> </th>
+                                </tr>
+                                <ui:repeat var="o" value="#{markController.getMarklist(1, 4)}" varStatus="status">
+
+                                    <tr>
+                                        <td>#{o.name}</td>
+                                        <td style="color:greenyellow;font-size: large;" >#{o.mark}</td>
+                                    </tr>
+
+                                </ui:repeat>
+
+                            </table>
+                            <ul class="actions">
+                                <li><a href="#" class="button">back</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a href="#" class="image"><img src="images/pe.png" alt="" data-position="25% 25%" /></a>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Physical Education</h2>
+                            <table>
+                                <tr>
+                                    <th><h:outputText value="For: " ></h:outputText> </th>
+                                <th><h:outputText  value="Grade: " ></h:outputText> </th>
+                                </tr>
+                                <ui:repeat var="o" value="#{markController.getMarklist(1, 5)}" varStatus="status">
+
+                                    <tr>
+                                        <td>#{o.name}</td>
+                                        <td style="color:greenyellow;font-size: large;" >#{o.mark}</td>
+                                    </tr>
+
+                                </ui:repeat>
+
+                            </table>
+                            <ul class="actions">
+                                <li><a href="#" class="button">back</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Two -->
+            <section id="two" class="wrapper style3 fade-up">
+                <div class="inner">
+                    <h2>Statistics</h2>
+                    <p>Average grade for each course:</p>
+                    <div class="features">
+                        <section>
+                            <span class="icon major fa-fighter-jet"></span>
+                            <h3>Mathematics</h3>
+                            <p>#{markController.getAverageMark(1, 1)}</p>
+                        </section>
+                        <section>
+                            <span class="icon major fa-lock"></span>
+                            <h3>English</h3>
+                            <p>#{markController.getAverageMark(1, 2)}</p>
+                        </section>
+                        <section>
+                            <span class="icon major fa-code"></span>
+                            <h3>Computer Science</h3>
+                            <p>#{markController.getAverageMark(1, 3)}</p>
+                        </section>
+                        <section>
+                            <span class="icon major fa-desktop"></span>
+                            <h3>History</h3>
+                            <p>#{markController.getAverageMark(1, 4)}</p>
+                        </section>
+                        <section>
+                            <span class="icon major fa-bicycle"></span>
+                            <h3>Physical Education</h3>
+                            <p>#{markController.getAverageMark(1, 5)}</p>
+                        </section>
+                        <section>
+                            <span class="icon major fa-android"></span>
+                            <h3>Semester so far</h3>
+                            <p>#{markController.getAverageSemesterMark(1)}</p>
+                        </section>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">back</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li> Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li><a href="faces/admin_panel.xhtml">Administration panel</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
